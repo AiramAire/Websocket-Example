@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>New notification!</h1>
+<div mat-dialog-content>
+  <!-- You, user with id {{data.userId}} have a new notification: -->
+  {{data.notificationName}}
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+  <button mat-button (click)="updateNotificationState(data.notId)">
+    Mark as read
+  </button>
+</div>
